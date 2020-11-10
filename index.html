@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain West Guns</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#">
+                <img src="logo.png" alt="company logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">AR15/AR9</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Welcome To<br><span>Moutain West</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum, blanditiis placeat
+                    officiis excepturi accusantium? Repellendus quibusdam veniam totam, voluptas enim id provident,
+                    exercitationem labore ea animi ratione quas aut.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="glock001.png" alt="Glock Pistol/Handgun CWP" class="glock">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="glock001.png" onclick="imgSlider('glock001.png');changeBgColor('#0062be')"
+                    alt="Glock Pistol/Handgun CWP"></li>
+            <li><img src="ar15002.png" onclick="imgSlider('ar15002.png');changeBgColor('#e60c2c')"
+                    alt="AR 15 Pistol 223/556 CWP"></li>
+            <li><img src="blackrifle003.png" onclick="imgSlider('blackrifle003.png');changeBgColor('#1e1e1e')"
+                    alt="Glock Pistol/Handgun CWP">
+            </li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.glock').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
